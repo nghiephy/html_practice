@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Binh chon Thanh Pho</title>
+    <style>
+        * {
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-image: url(../assets/image/city_background.jpg);
+            background-repeat: no-repeat;
+            background-attachment: fixed;  
+            background-size: cover;
+        }
+        #main {
+            background-color: white;
+            width: 700px;
+            height: 100%;
+            border: 1px solid black;
+            padding: 5px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        #main h1 {
+            background-color: rgb(217, 241, 168);
+            padding: 10px 4px;
+            text-transform: uppercase;
+            text-align: center;
+            margin: 0;
+        }
+        #main .binh-chon {
+            background-origin: padding-box;
+            font-size: 20px;
+        }
+        input[type=text], select {
+            font-size: 18px;
+            width: 40%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        select {
+            width: 20%;
+            font-size: 18px;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+    </style>
+
+    <script>
+        function binhchon(){
+
+        }
+    </script>
+</head>
+<body>
+    <div id="main">
+        <h1>Bình chọn thành phố yêu thích</h1>
+
+        <div class="binh-chon">
+            <form action="#" name="form1" method="POST">
+                <br>Họ tên: <input type="text" name="hoten" value="">
+                <br>Phái: <input type="radio" name="phai" value="Nam">Nam
+                            <input type="radio" name="phai" value="Nu"> Nữ
+                <br>Chọn địa điểm:
+                <br><input type="checkbox" name="cacdiadiem" value="Ha Noi">Hà Nội
+                <br><input type="checkbox" name="cacdiadiem" value="Nha Trang">Nha Trang
+                <br><input type="checkbox" name="cacdiadiem" value="TP HCM">TP HCM
+                <br><input type="checkbox" name="cacdiadiem" value="Can Tho">Cần Thơ
+
+                <br>Thành phố yêu thích nhất:
+                <select name="thichnhat" id="thichnhat">
+                    <option value="Ha Noi">Hà Nội</option>
+                    <option value="Nha Trang">Nha Trang</option>
+                    <option value="TP HCM">TP HCM</option>
+                    <option value="Can Tho">Cần Thơ</option>
+                </select>
+
+                <p><input type="button" onclick="binhchon();" name="button" value="Bình chọn"></p>
+            </form><hr>
+            
+            <div class="ket-qua">
+                <p><b>Kết quả</b></p>
+                <p id="danhsachchon" style="background-color: wheat;">&nbsp;</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
